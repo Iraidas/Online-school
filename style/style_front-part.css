@@ -1,0 +1,169 @@
+.main {
+    padding: 70px 200px;
+    background: #1a1518;
+}
+
+.information-card {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    justify-content: flex-start;
+    height: max-content;
+    min-height: 500px;
+    border-radius: 40px;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 47 0px;
+    position: relative;
+    width: 45%;
+    z-index: 2;
+    padding: 40px;
+}
+
+.text-top {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 600;
+    font-size: 38px;
+    color: #1a1518;
+}
+
+.add-head {
+    display: inline;
+    font-weight: 600;
+    font-size: 30px;
+    overflow: hidden;
+    color: #b6a0a7;
+    border-right: 2.5px solid #1a1518;
+    animation: flashing-border 0.75s step-end infinite;
+}
+
+@keyframes flashing-border {
+    0% {
+        border-color: #1a1518;
+    }
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: #1a1518;
+    }
+}
+
+.text > .goals {
+    display: flex;
+}
+
+.marks {
+    display: flex;
+    flex-direction: column;
+    padding-right: 6px;
+}
+
+.points {
+    color: #1a1518;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.pictures {
+    position: absolute;
+    z-index: 0;
+    left: 360px;
+}
+
+.pictures > img {
+    width: 130%;
+    height: 130%;
+}
+
+.shadow {
+    position: absolute;
+    top: 0px;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(to left, transparent 0, #f8f8f8 100%);
+}
+
+@media screen and (max-width: 320px) {
+    .text {
+        height: 64% !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+    .text {
+        height: 58% !important;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 426px) {
+    .text {
+        height: 48% !important;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .main {
+        padding: 50px 20px;
+    }
+
+    .information-card {
+        height: max-content;
+        min-height: 480px;
+    }
+
+    .text {
+        position: absolute;
+        width: auto;
+        height: 53%;
+        padding: 30px;
+    }
+
+    .text-top {
+        font-size: 22px;
+    }
+
+    .add-head {
+        font-size: 16px !important;
+    }
+
+    .animation-text {
+        padding-top: 4px;
+    }
+
+    .pictures {
+        left: 0;
+        bottom: -16px;
+    }
+
+    .shadow {
+        width: 100%;
+        background: linear-gradient(to top, transparent 0, #f8f8f8 100%);
+    }
+
+    .points {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .marks > img {
+        width: 17px;
+        padding-top: 7px;
+    }
+}
+
+@media (min-width: 1191px) and (max-width: 1300px) {
+    .pictures > img {
+        width: auto;
+        height: auto;
+    }
+}

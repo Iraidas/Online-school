@@ -1,0 +1,17 @@
+.footer {
+    background-color: #2d262c;
+    padding: 0 70px;
+    font-weight: 400;
+}
+
+.up {
+    padding: 40px;
+    font-size: medium;
+    text-align: center;
+}
+.up > a:hover {
+    cursor: pointer;
+    color: #dac2ca;
+    transition: 0.2s;
+    border-bottom: 2px solid #dac2ca;
+}

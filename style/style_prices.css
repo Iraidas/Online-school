@@ -1,0 +1,247 @@
+.title,
+.subtitle {
+    display: table;
+    max-width: 960px;
+    width: 100%;
+    padding-top: 100px;
+    margin: 0 auto 0;
+    font-weight: 600;
+    font-size: 35px;
+    color: #1a1518;
+}
+
+.subtitle {
+    padding-top: 10px !important;
+    font-size: 20px !important;
+}
+
+.t_container {
+    display: table;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+.title-tab {
+    float: left;
+    border: 1px solid #1a1518;
+    width: 20%;
+    padding: 10px;
+    color: #1a1518;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.title-tab:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.title-tab:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.btn-group .title-tab:not(:last-child) {
+    border-right: none;
+}
+
+.title-tab:active {
+    color: #000000;
+}
+
+.transition {
+    transition: 0.3s;
+}
+
+.active {
+    cursor: default;
+    color: #ffffff;
+    background: #dac2ca;
+}
+
+.artboard {
+    background: #1a1518;
+    margin: 40px 0 10px;
+    overflow: auto;
+}
+
+.options {
+    display: table;
+    padding: 20px;
+    margin: 0 auto;
+    border-spacing: 20px 0;
+}
+
+.option {
+    display: table-cell;
+    min-width: 260px;
+    background: #ffffff;
+    border-radius: 15px;
+}
+
+.top-atoms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 10px;
+}
+
+.number-of-classes {
+    display: flex;
+    flex-direction: row;
+}
+
+.amount {
+    background: #000000;
+    border-radius: 5px;
+    min-width: 48px;
+}
+
+.amount > p {
+    font-weight: 600;
+    font-size: larger;
+    padding: 6px 13px;
+    text-align: center;
+}
+
+.word > p {
+    padding: 7px 13px;
+    color: #000000;
+    font-size: larger;
+}
+
+.question {
+    margin: auto 0;
+}
+
+.question:hover::before {
+    content: attr(data-title);
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: #32325d40 0px 13px 27px -5px, #0000004d 0px 8px 16px -8px;
+    font-size: 15.5px;
+    background: #ffffff;
+    margin-top: 10px;
+    margin-left: -225px;
+    color: #000000;
+    transform: translate(-0.5em, -50%);
+}
+
+@keyframes title-horz {
+    to {
+        transform: translate(0, -50%);
+    }
+}
+
+.question:hover::before {
+    animation: title-horz 300ms ease-out forwards;
+}
+
+.top-text {
+    padding: 0 20px;
+    min-height: 26px;
+}
+
+.top-text > p {
+    color: #000000;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.bottom-atoms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 20px 20px;
+}
+
+.individual-lesson-prices {
+    margin-top: 60px;
+}
+
+.individual-lesson-prices > .bottom-atoms {
+    padding-top: 50px !important;
+}
+
+.left-atoms > p,
+.cost,
+.cost-individual-lesson {
+    color: #000000;
+    font-size: 14px;
+}
+
+.cost,
+.cost-individual-lesson {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.clarification {
+    padding: 0 40px 20px;
+    color: #dac2ca;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.scroll {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.scroll > div {
+    margin: 0 5px;
+    font-weight: 500;
+    font-size: 25px;
+    color: #dac2ca;
+    text-align: center;
+}
+
+.scroll > .arrow {
+    font-size: 35px !important;
+    transform: translate(0.5em, 0);
+    animation: arrow-movement 2000ms ease infinite;
+}
+
+@keyframes arrow-movement {
+    0% {
+        transform: translate(-10px, 0);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-10px, 0);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .individual-lesson-prices > .scroll {
+        display: flex;
+    }
+
+    .group-lesson-prices > .scroll {
+        display: flex;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 1190px) {
+    .individual-lesson-prices > .scroll {
+        display: flex;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 920px) {
+    .group-lesson-prices > .scroll {
+        display: flex;
+    }
+}

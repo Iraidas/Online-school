@@ -1,0 +1,29 @@
+* {
+    cursor: default;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "Fira Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar,
+.artboard::-webkit-scrollbar {
+    width: 18px;
+}
+
+body::-webkit-scrollbar-track,
+.artboard::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb,
+.artboard::-webkit-scrollbar-thumb {
+    background-color: #dac2ca;
+    border: 3px solid #ffffff;
+    border-radius: 15px;
+}

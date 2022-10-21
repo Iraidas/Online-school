@@ -1,0 +1,37 @@
+.a_container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-me {
+    padding: 90px 0 40px;
+}
+
+.text4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #1a1518;
+}
+
+.teachers-name {
+    text-align: start;
+    font-weight: 600;
+    font-size: 25px;
+    color: #1a1518;
+    padding: 60px 0 10px;
+}
+
+.resume {
+    text-align: start;
+    font-weight: 300;
+    font-size: 19px;
+    color: #1a1518;
+    padding: 20px 0;
+    line-height: 34px;
+    border-bottom: 1px solid #2d262c7f;
+}
+
+.resume-part2 {
+    border-bottom: none;
+}
