@@ -1,6 +1,7 @@
 .additional-info {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
     background: #ededed3e;
 }
@@ -18,6 +19,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
+    max-width: 1500px;
 }
 
 .article {
