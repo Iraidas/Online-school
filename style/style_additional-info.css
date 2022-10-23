@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
-    max-width: 1500px;
+    max-width: 1500px;  
 }
 
 .article {
@@ -58,14 +58,7 @@
     position: absolute;
 }
 
-.article:nth-child(1) .emoji > img {
-    width: 96px;
-    margin-top: -3em;
-    margin-left: 28em;
-    transform: rotate(15deg);
-}
-
-.article:nth-child(2) .emoji > img {
+/* .article:nth-child(2) .emoji > img {
     width: 94px;
     margin-top: -2em;
     margin-left: 28em;
@@ -96,13 +89,49 @@
     margin-top: -3em;
     margin-left: 17em;
     transform: rotate(15deg);
-}
+} */
 
 .text-article {
     padding: 29px;
     color: #1a1518;
     line-height: 28px;
     font-size: 19px;
+}
+
+.article:nth-child(1) .text-article::after {
+    content: url(.//images/biceps.png);
+    position: absolute;
+    transform: rotate(15deg);
+}
+
+.article:nth-child(2) .text-article::after {
+    content: url(.//images/text_cloud.png);
+    position: absolute;
+    transform: rotate(15deg);
+}
+
+.article:nth-child(3) .text-article::after {
+    content: url(.//images/note.png);
+    position: absolute;
+    transform: rotate(-15deg);
+}
+
+.article:nth-child(4) .text-article::after {
+    content: url(.//images/handshake.png);
+    position: absolute;
+    margin-top: 10px;
+    right: 60px;
+}
+
+.article:nth-child(5) .text-article::after {
+    content: url(.//images/student.png);
+    position: absolute;
+}
+
+.article:nth-child(6) .text-article::after {
+    content: url(.//images/red_heart.png);
+    position: absolute;
+    transform: rotate(15deg);
 }
 
 @media screen and (max-width: 426px) {
