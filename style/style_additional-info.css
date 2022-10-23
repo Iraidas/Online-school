@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
-    max-width: 1500px;  
+    max-width: 1500px;
 }
 
 .article {
@@ -75,30 +75,33 @@
     content: url(.//images/text_cloud.png);
     position: absolute;
     transform: rotate(15deg);
+    margin: 10px;
 }
 
 .article:nth-child(3) .text-article::after {
     content: url(.//images/note.png);
     position: absolute;
     transform: rotate(-15deg);
+    margin: 10px;
 }
 
 .article:nth-child(4) .text-article::after {
     content: url(.//images/handshake.png);
     position: absolute;
-    margin-top: 10px;
-    right: 60px;
+    margin: 10px;
 }
 
 .article:nth-child(5) .text-article::after {
     content: url(.//images/student.png);
     position: absolute;
+    margin: 10px;
 }
 
 .article:nth-child(6) .text-article::after {
     content: url(.//images/red_heart.png);
     position: absolute;
     transform: rotate(15deg);
+    margin: 10px;
 }
 
 @media screen and (max-width: 426px) {
@@ -117,7 +120,7 @@
     }
 
     .article {
-        margin: 50px 60px 0 35px;
+        margin: 100px 60px 0 35px;
         width: auto;
     }
 
@@ -141,7 +144,7 @@
     }
 
     .article:nth-child(even) {
-        margin: 50px 35px 0 60px;
+        margin: 100px 35px 0 60px;
     }
 
     .emoji img {
@@ -149,33 +152,22 @@
         top: -2em;
     }
 
-    .article:nth-child(1) .emoji > img {
-        margin-top: -4em;
-        margin-left: 14em;
+    .article:nth-child(1) {
+        margin-top: 50px;
     }
 
-    .article:nth-child(2) .emoji > img {
-        margin-top: -4em;
-        margin-left: 13em;
+    .article:nth-child(1) .text-article::after {
+        margin: 0;
+        right: 20px;
     }
 
-    .article:nth-child(3) .emoji > img {
-        margin-top: -4em;
-        margin-left: 14em;
+    .article:nth-child(4) .text-article::after {
+        margin-top: 10px;
+        right: 60px;
     }
 
-    .article:nth-child(4) .emoji > img {
-        margin-top: 8em;
-        margin-left: 14em;
-    }
-
-    .article:nth-child(5) .emoji > img {
-        margin-top: -2.5em;
-        margin-left: 15em;
-    }
-
-    .article:nth-child(6) .emoji > img {
-        margin-top: -3em;
-        margin-left: 10em;
+    .article:nth-child(5) .text-article::after,
+    .article:nth-child(6) .text-article::after {
+        margin: 0;
     }
 }
