@@ -117,6 +117,7 @@
 
 .question {
     margin: auto 0;
+    position: sticky;
 }
 
 .question:hover::before {
