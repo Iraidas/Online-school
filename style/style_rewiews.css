@@ -60,13 +60,36 @@
     clear: both;
 }
 
-@media (min-width: 320px) and (max-width: 1190px) {
+@media screen and (max-width: 426px) {
+    .reviews {
+        margin: 70px auto 0;
+    }
+
+    .review {
+        margin: 0 0 80px;
+    }
+
+    .avatar {
+        display: table-row;
+        text-align-last: center;
+    }
+
+    .text-wrapper {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 1190px) {
+
     .text-wrapper {
         width: 500px;
     }
+
     .review-text {
         font-size: 18px !important;
     }
+
     .reviewers-name {
         font-size: 20px !important;
     }

@@ -65,7 +65,12 @@
 
 .artboard {
     background-color: #dac2ca;
-    background-image: linear-gradient(135deg, #dac2ca 0%, #362d31 31%, #1a1518 100%);
+    background-image: linear-gradient(
+        135deg,
+        #dac2ca 0%,
+        #362d31 31%,
+        #1a1518 100%
+    );
     margin: 40px 0 10px;
     overflow: auto;
 }
@@ -224,11 +229,11 @@
 
 @media screen and (max-width: 426px) {
     .individual-lesson-prices > .scroll,
-    .group-lesson-prices > .scroll  {
+    .group-lesson-prices > .scroll {
         display: flex;
         margin-left: 50px;
     }
-    
+
     .prices .scroll > div {
         font-size: 17px !important;
     }
