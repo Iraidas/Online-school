@@ -13,7 +13,7 @@ html {
 
 body::-webkit-scrollbar,
 .artboard::-webkit-scrollbar {
-    width: 18px;
+    width: 15px;
 }
 
 body::-webkit-scrollbar-track,
@@ -26,4 +26,39 @@ body::-webkit-scrollbar-thumb,
     background-color: #dac2ca;
     border: 3px solid #ffffff;
     border-radius: 15px;
+}
+
+@media screen and (max-width: 426px) {
+
+    body::-webkit-scrollbar,
+        .artboard::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    body::-webkit-scrollbar-track,
+    .artboard::-webkit-scrollbar-track {
+        background: #ffffff00;
+    }
+
+    body::-webkit-scrollbar-thumb,
+    .artboard::-webkit-scrollbar-thumb {
+        background-color: #dac2ca;
+        border-radius: 15px;
+        border: none;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 1190px) {
+    body::-webkit-scrollbar-track,
+    .artboard::-webkit-scrollbar-track {
+        background: #ffffff00;
+    }
+
+    body::-webkit-scrollbar-thumb,
+    .artboard::-webkit-scrollbar-thumb {
+        background-color: #dac2ca;
+        border-radius: 15px;
+        border: none;
+        width: 10px;
+    }
 }

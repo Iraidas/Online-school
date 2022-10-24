@@ -166,8 +166,12 @@
         right: 60px;
     }
 
-    .article:nth-child(5) .text-article::after,
+    .article:nth-child(5) .text-article::after {
+        margin: 0;
+    }
+
     .article:nth-child(6) .text-article::after {
         margin: 0;
+        right: 15px;
     }
 }
