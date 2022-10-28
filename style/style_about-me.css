@@ -4,7 +4,7 @@
 }
 
 .about-me {
-    padding: 90px 0 40px;
+    padding: 0 0 40px;
 }
 
 .text4 {
@@ -34,4 +34,24 @@
 
 .resume-part2 {
     border-bottom: none;
+}
+
+
+@media screen and (max-width: 426px) {
+
+    .a_container {
+        min-width: 260px;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .teachers-name {
+        font-size: 23px;
+    }
+
+    .resume {
+        font-size: 16px;
+        padding: 30px 0 10px;
+    }
+
 }

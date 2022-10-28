@@ -69,6 +69,10 @@
         margin: 0 0 80px;
     }
 
+    .review:nth-of-type(4) {
+        margin: 0 0 60px !important;
+    }
+
     .avatar {
         display: table-row;
         text-align-last: center;
@@ -77,6 +81,10 @@
     .text-wrapper {
         text-align: center;
         padding-left: 0;
+    }
+
+    .clear {
+        display: none;
     }
 }
 
