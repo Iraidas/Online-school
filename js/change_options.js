@@ -40,9 +40,8 @@ function changeOptions(value) {
     let costs = document.querySelectorAll(".cost-individual-lesson");
     let quests = document.querySelectorAll(".question");
 
-    let levels = Object.keys(data);
-    let pricesArray = data[levels[value]].prices;
-    let fullCostsArray = data[levels[value]].fullCosts;
+    let pricesArray = data[value].prices;
+    let fullCostsArray = data[value].fullCosts;
 
     for (let i = 0; i < pricesArray.length; i++) {
         costs[i].innerHTML = pricesArray[i] + " руб";

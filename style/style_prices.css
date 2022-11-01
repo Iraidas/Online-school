@@ -40,13 +40,13 @@
 }
 
 .title-tab:first-child {
-    border-top-left-radius: 35px;
-    /* border-bottom-left-radius: 25px; */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .title-tab:last-child {
-    /* border-top-right-radius: 25px; */
-    border-bottom-right-radius: 35px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .btn-group .title-tab:not(:last-child) {
@@ -268,12 +268,12 @@
         max-width: 960px;
         margin: 40px auto;
     }
-    
+
     .select {
         width: 280px;
-        border: 1px solid #000;
+        border: 2px solid #1a1518;
         color: #1a1518;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 15px;
         padding: 10px;
         outline: none;
@@ -281,12 +281,9 @@
 
     .select option {
         color: #1a1518;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 15px;
-        line-height: 26px;
     }
-
-
 }
 
 @media (min-width: 426px) and (max-width: 920px) {
@@ -299,6 +296,4 @@
     .individual-lesson-prices > .scroll {
         display: flex;
     }
-
-
 }
