@@ -1,3 +1,7 @@
+.s_container {
+    display: none;
+}
+
 .title,
 .subtitle {
     display: table;
@@ -257,11 +261,29 @@
     .t_container {
         display: none;
     }
-}
 
-@media (min-width: 426px) and (max-width: 1190px) {
-    .individual-lesson-prices > .scroll {
-        display: flex;
+    .s_container {
+        display: block;
+        text-align: center;
+        max-width: 960px;
+        margin: 40px auto;
+    }
+    
+    .select {
+        width: 280px;
+        border: 1px solid #000;
+        color: #1a1518;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 10px;
+        outline: none;
+    }
+
+    .select option {
+        color: #1a1518;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 26px;
     }
 
 
@@ -271,4 +293,12 @@
     .group-lesson-prices > .scroll {
         display: flex;
     }
+}
+
+@media (min-width: 426px) and (max-width: 1190px) {
+    .individual-lesson-prices > .scroll {
+        display: flex;
+    }
+
+
 }
