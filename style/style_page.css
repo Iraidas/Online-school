@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb,
     border-radius: 15px;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
 
     body::-webkit-scrollbar,
         .artboard::-webkit-scrollbar {
@@ -48,7 +48,7 @@ body::-webkit-scrollbar-thumb,
     }
 }
 
-@media (min-width: 426px) and (max-width: 1190px) {
+/* @media (min-width: 426px) and (max-width: 1190px) {
     body::-webkit-scrollbar-track,
     .artboard::-webkit-scrollbar-track {
         background: #ffffff00;
@@ -61,4 +61,4 @@ body::-webkit-scrollbar-thumb,
         border: none;
         width: 10px;
     }
-}
+} */

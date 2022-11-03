@@ -105,7 +105,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
     .checkbox,
     .bottom,
     .additionalwrapper {
@@ -222,5 +222,23 @@
 
     .links {
         padding: 10px 20px 20px;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 590px) {
+    .top .toggle {
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 590px) and (max-width: 690px) {
+    .top .toggle {
+        margin-left: 200px;
+    }
+}
+
+@media (min-width: 690px) and (max-width: 768px) {
+    .top .toggle {
+        margin-left: 300px;
     }
 }
