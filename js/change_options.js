@@ -22,17 +22,33 @@ let data = {
 };
 
 let select = document.querySelector(".select");
+let buttons = document.querySelectorAll(".title-tab");
+
 select.addEventListener("change", function () {
+
     changeOptions(this.value);
+    
+    for (let i = 0; i < buttons.length; i++) {
+        if (this.value == buttons[i].value) {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            buttons[i].className += " active";
+        }
+    }
 });
 
-let buttons = document.querySelectorAll(".title-tab");
+
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function () {
         var current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
+    
         changeOptions(this.value);
+
+        if (select[i].value == this.value) {
+            select[i].selected = true;
+        }
     });
 }
 
