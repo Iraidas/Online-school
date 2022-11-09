@@ -328,8 +328,8 @@
     }
 }
 
-@media (min-width: 426px) and (max-width: 1190px) {
+/* @media (min-width: 426px) and (max-width: 1190px) {
     .individual-lesson-prices > .scroll {
         display: flex;
     }
-}
+} */

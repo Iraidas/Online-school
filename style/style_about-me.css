@@ -36,9 +36,7 @@
     border-bottom: none;
 }
 
-
-@media screen and (max-width: 426px) {
-
+@media screen and (max-width: 768px) {
     .a_container {
         min-width: 260px;
         width: 280px;
@@ -47,28 +45,18 @@
 
     .teachers-name {
         font-size: 23px;
+        padding: 10px 0;
     }
 
     .resume {
         font-size: 16px;
         padding: 30px 0 10px;
     }
-
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-
     .a_container {
         margin: 0 70px;
+        width: auto;
     }
-
-    .teachers-name {
-        font-size: 23px;
-    }
-
-    .resume {
-        font-size: 16px;
-        padding: 30px 0 10px;
-    }
-
 }
