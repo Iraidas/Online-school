@@ -24,6 +24,7 @@
 
 .article {
     width: 500px;
+    max-width: 500px;
     height: max-content;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 0px #00000033;
@@ -104,7 +105,7 @@
     margin: 10px;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 650px) {
     .additional-info {
         padding-bottom: 50px;
     }
@@ -184,5 +185,52 @@
     .article:nth-child(6) .text-article::after {
         margin: 10px 0 0;
         right: 15px;
+    }
+}
+
+
+@media (min-width: 650px) and (max-width: 768px) {
+    .text1 {
+        padding: 90px 25px 30px;
+    }
+
+    .additional-info {
+        padding-bottom: 90px;
+    }
+
+    .articles {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .article {
+        margin: 100px 60px 0 0;
+        width: auto;
+    }
+
+    .article:nth-child(even) {
+        margin: 100px 0 0 60px;
+    }
+
+    .article::before {
+        font-size: 80px;
+    }
+
+    .text-before::before {
+        font-size: 22px;
+    }
+
+    .text-article {
+        font-size: 17.5px;
+        line-height: 25px;
+    }
+
+    .emoji img {
+        width: 90px;
+        top: -2em;
+    }
+
+    .article:nth-child(1) {
+        margin-top: 50px;
     }
 }

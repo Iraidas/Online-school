@@ -224,6 +224,11 @@
         padding: 10px 20px 20px;
     }
 }
+@media (min-width: 426px) and (max-width: 768px) {
+    .top {
+        font-size: medium;
+    }
+}
 
 @media (min-width: 490px) and (max-width: 590px) {
     .top .toggle {
