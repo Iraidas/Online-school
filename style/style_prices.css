@@ -275,7 +275,7 @@
     }
 
     .prices .subtitle {
-        width: 280px;
+        max-width: 280px;
         font-size: 17px !important;
     }
 
@@ -286,12 +286,45 @@
     .wrapper-mobile {
         display: block;
     }
-
 }
 
-@media (min-width: 426px) and (max-width: 920px) {
+@media (min-width: 426px) and (max-width: 768px) {
     .group-lesson-prices > .scroll {
         display: flex;
+    }
+
+    .title {
+        padding-top: 90px;
+        max-width: 380px;
+        font-size: 29px;
+    }
+
+    .prices .subtitle {
+        max-width: 380px;
+        font-size: 17px !important;
+    }
+
+    .wrapper-mobile .select {
+        width: 380px;
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .wrapper-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 616px) and (max-width: 768px) {
+    .title,
+    .prices .subtitle {
+        max-width: 480px;
+    }
+
+    .wrapper-mobile .select {
+        width: 480px;
     }
 }
 

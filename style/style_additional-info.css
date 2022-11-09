@@ -110,11 +110,6 @@
         padding-bottom: 50px;
     }
 
-    .text1 {
-        font-size: 24px;
-        padding: 60px 25px 10px;
-    }
-
     .articles {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -188,11 +183,7 @@
     }
 }
 
-
 @media (min-width: 650px) and (max-width: 768px) {
-    .text1 {
-        padding: 90px 25px 30px;
-    }
 
     .additional-info {
         padding-bottom: 90px;
