@@ -38,7 +38,7 @@
 .add-head {
     display: inline;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
     overflow: hidden;
     color: #b6a0a7;
     border-right: 2.5px solid #1a1518;
@@ -70,7 +70,7 @@
 .points {
     color: #1a1518;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 26px;
 }
 
@@ -191,6 +191,47 @@
     }
     .text-top {
         font-size: 26px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main {
+        padding: 50px 20px;
+    }
+
+    .text-top {
+        font-size: 30px;
+    }
+
+    .add-head {
+        font-size: 22px;
+    }
+
+    .points {
+        font-size: 14px;
+    }
+
+    .marks > img {
+        width: 17px;
+        padding-top: 7px;
+    }
+
+    .pictures {
+        left: 150px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pictures > img {
+        width: 100%;
+        height: 100%;
+    }    
+
+}
+
+@media (min-width: 883px) and (max-width: 1440px) {
+    .front-part .main {
+        padding: 50px;
     }
 }
 
