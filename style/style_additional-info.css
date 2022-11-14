@@ -39,7 +39,7 @@
     position: absolute;
     color: #1a1518;
     font-weight: 600;
-    content: attr(value);
+    content: attr(id);
     margin-left: -0.33em;
     font-size: 90px;
 }
@@ -47,7 +47,7 @@
 .text-before::before {
     position: absolute;
     color: #1a1518;
-    content: attr(value);
+    content: attr(title);
     width: 500px;
     margin-top: -0.7em;
     margin-left: 1em;
