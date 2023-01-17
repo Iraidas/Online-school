@@ -1,8 +1,15 @@
 .reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
     max-width: 1500px;
@@ -67,7 +74,8 @@
 
     .avatar {
         display: table-row;
-        text-align-last: center;
+        -moz-text-align-last: center;
+             text-align-last: center;
     }
 
     .text-wrapper {

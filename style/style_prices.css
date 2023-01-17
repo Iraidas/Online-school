@@ -58,6 +58,8 @@
 }
 
 .transition {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -69,6 +71,12 @@
 
 .artboard {
     background-color: #dac2ca;
+    background-image: -o-linear-gradient(
+        315deg,
+        #dac2ca 0%,
+        #362d31 31%,
+        #1a1518 100%
+    );
     background-image: linear-gradient(
         135deg,
         #dac2ca 0%,
@@ -94,15 +102,27 @@
 }
 
 .top-atoms {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 20px 20px 10px;
 }
 
 .number-of-classes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .amount {
@@ -136,23 +156,35 @@
     width: 180px;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: #32325d40 0px 13px 27px -5px, #0000004d 0px 8px 16px -8px;
+    -webkit-box-shadow: #32325d40 0px 13px 27px -5px, #0000004d 0px 8px 16px -8px;
+            box-shadow: #32325d40 0px 13px 27px -5px, #0000004d 0px 8px 16px -8px;
     font-size: 15.5px;
     background: #ffffff;
     margin-top: 10px;
     margin-left: -225px;
     color: #000000;
-    transform: translate(-0.5em, -50%);
+    -webkit-transform: translate(-0.5em, -50%);
+        -ms-transform: translate(-0.5em, -50%);
+            transform: translate(-0.5em, -50%);
+}
+
+@-webkit-keyframes title-horz {
+    to {
+        -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+    }
 }
 
 @keyframes title-horz {
     to {
-        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%);
     }
 }
 
 .question:hover::before {
-    animation: title-horz 300ms ease-out forwards;
+    -webkit-animation: title-horz 300ms ease-out forwards;
+            animation: title-horz 300ms ease-out forwards;
 }
 
 .top-text {
@@ -167,9 +199,16 @@
 }
 
 .bottom-atoms {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 30px 20px 20px;
 }
 
@@ -201,8 +240,13 @@
 
 .scroll {
     display: none;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 100px;
 }
 
@@ -216,19 +260,40 @@
 .scroll > .arrow {
     margin: 0 5px;
     width: 14px;
-    transform: translate(0.5em, 0);
-    animation: arrow-movement 2000ms linear infinite;
+    -webkit-transform: translate(0.5em, 0);
+        -ms-transform: translate(0.5em, 0);
+            transform: translate(0.5em, 0);
+    -webkit-animation: arrow-movement 2000ms linear infinite;
+            animation: arrow-movement 2000ms linear infinite;
+}
+
+@-webkit-keyframes arrow-movement {
+    0% {
+        -webkit-transform: translate(-10px, 0);
+                transform: translate(-10px, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-10px, 0);
+                transform: translate(-10px, 0);
+    }
 }
 
 @keyframes arrow-movement {
     0% {
-        transform: translate(-10px, 0);
+        -webkit-transform: translate(-10px, 0);
+                transform: translate(-10px, 0);
     }
     50% {
-        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
     }
     100% {
-        transform: translate(-10px, 0);
+        -webkit-transform: translate(-10px, 0);
+                transform: translate(-10px, 0);
     }
 }
 
@@ -256,6 +321,8 @@
 @media screen and (max-width: 426px) {
     .individual-lesson-prices > .scroll,
     .group-lesson-prices > .scroll {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-left: 50px;
     }
@@ -290,6 +357,8 @@
 
 @media (min-width: 426px) and (max-width: 768px) {
     .group-lesson-prices > .scroll {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 

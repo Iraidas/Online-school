@@ -12,6 +12,8 @@
 .up > a:hover {
     cursor: pointer;
     color: #dac2ca;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
     border-bottom: 2px solid #dac2ca;
 }

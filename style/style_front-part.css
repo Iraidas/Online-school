@@ -4,10 +4,16 @@
 }
 
 .information-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     z-index: 0;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     min-height: 500px;
     border-radius: 40px;
@@ -16,9 +22,16 @@
 }
 
 .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 47 0px;
     position: relative;
     width: 45%;
@@ -27,8 +40,13 @@
 }
 
 .text-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: left;
     font-weight: 600;
     font-size: 38px;
@@ -42,7 +60,20 @@
     overflow: hidden;
     color: #b6a0a7;
     border-right: 2.5px solid #1a1518;
-    animation: flashing-border 0.75s step-end infinite;
+    -webkit-animation: flashing-border 0.75s step-end infinite;
+            animation: flashing-border 0.75s step-end infinite;
+}
+
+@-webkit-keyframes flashing-border {
+    0% {
+        border-color: #1a1518;
+    }
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: #1a1518;
+    }
 }
 
 @keyframes flashing-border {
@@ -58,12 +89,19 @@
 }
 
 .text > .goals {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .marks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-right: 6px;
 }
 
@@ -90,6 +128,8 @@
     top: 0px;
     width: 90%;
     height: 100%;
+    background: -webkit-gradient(linear, right top, left top, color-stop(0, transparent), to(#f8f8f8));
+    background: -o-linear-gradient(right, transparent 0, #f8f8f8 100%);
     background: linear-gradient(to left, transparent 0, #f8f8f8 100%);
 }
 
@@ -99,6 +139,8 @@
     }
 
     .information-card {
+        height: -webkit-max-content;
+        height: -moz-max-content;
         height: max-content;
         min-height: 480px;
     }
@@ -129,6 +171,8 @@
 
     .shadow {
         width: 100%;
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0, transparent), to(#f8f8f8));
+        background: -o-linear-gradient(bottom, transparent 0, #f8f8f8 100%);
         background: linear-gradient(to top, transparent 0, #f8f8f8 100%);
     }
 

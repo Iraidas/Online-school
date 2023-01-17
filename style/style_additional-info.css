@@ -1,8 +1,17 @@
 .additional-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: #ededed3e;
 }
 
@@ -15,19 +24,28 @@
 }
 
 .articles {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
     max-width: 1500px;
 }
 
 .article {
     width: 500px;
     max-width: 500px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px 0px #00000033;
+    -webkit-box-shadow: 5px 5px 10px 0px #00000033;
+            box-shadow: 5px 5px 10px 0px #00000033;
     background-color: #ffffff;
 }
 
@@ -69,20 +87,26 @@
 .article:nth-child(1) .text-article::after {
     content: url(.//images/biceps.png);
     position: absolute;
-    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
 }
 
 .article:nth-child(2) .text-article::after {
     content: url(.//images/text_cloud.png);
     position: absolute;
-    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
     margin: 10px;
 }
 
 .article:nth-child(3) .text-article::after {
     content: url(.//images/note.png);
     position: absolute;
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+            transform: rotate(-15deg);
     margin: 10px;
 }
 
@@ -101,7 +125,9 @@
 .article:nth-child(6) .text-article::after {
     content: url(.//images/red_heart.png);
     position: absolute;
-    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
     margin: 10px;
 }
 
@@ -111,8 +137,12 @@
     }
 
     .articles {
-        flex-direction: column;
-        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     }
 
     .article {
@@ -190,8 +220,12 @@
     }
 
     .articles {
-        flex-direction: column;
-        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     }
 
     .article {
