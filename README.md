@@ -1,8 +1,8 @@
- # Landing page online school website
- 
- ### The landing page is adapted to all modern versions of browsers and has been validated. Also adapted for mobile devices
+# Кроссбраузерный лендинг онлайн школы с адаптивной версткой
 
-### Used technology stack:
+### Это учебный проект для освоения навыка верстки. Лендинг валидный и просмотреть его можно с любых устройств.
+
+### Используемый стек технологий:
 - HTML
 - CSS
 - JavaScript
